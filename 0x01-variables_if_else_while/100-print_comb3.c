@@ -10,8 +10,10 @@ int main(void)
 
 	for (n = 0; n < 100; n++)
 	{
-		putchar('0' + (n/10));
-		putchar('0' + (n%10));
+		if (i / 10 % 10 > i % 10) break;
+
+		putchar('0' + (n / 10));
+		putchar('0' + (n % 10));
 
 		if (n != 99)
 		{
