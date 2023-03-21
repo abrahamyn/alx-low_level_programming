@@ -10,7 +10,8 @@ int main(void)
 
 	for (n = 0; n < 100; n++)
 	{
-		if (i / 10 % 10 > i % 10) break;
+		if (n / 10 % 10 > n % 10)
+			break;
 
 		putchar('0' + (n / 10));
 		putchar('0' + (n % 10));
