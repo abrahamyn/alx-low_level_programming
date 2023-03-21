@@ -8,12 +8,12 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 0; n < 9; n++)
 	{
 		putchar('0' + n);
-		putchar(' ');
 		putchar(',');
+		putchar(' ');
 	}
-	putchar ('\n');
+	putchar ('9\n');
 	return (0);
 }
