@@ -11,7 +11,7 @@ int main(void)
 
 	for (num = 0 ; num <= 9 ; num++)
 		printf("%d", num);
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (alpha = 'a'; alpha <= 'f'; alpha++)
 		putchar(alpha);
 	putchar('\n');
 	return (0);
