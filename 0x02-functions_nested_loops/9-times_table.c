@@ -11,66 +11,160 @@ void times_table(void)
 	
 	for (n = 0; n < 10; n++)
 	{
+		if (n != 9)
+		{
 		_putchar(48);
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
+		}
+		else
+		{
+			_putchar(48);
+		}
 	}
 	_putchar('\n');
 	for (n = 0; n < 10; n++)
 	{
+		if (n != 9)
+		{
 		_putchar(n + '0');
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
+		}
+		else
+		{
+			_putchar(n + '0');
+		}
 	}
 	_putchar('\n');
 	for (n = 0; n < 10; n++)
-	{
+        {
 		l = n * 2;
-		_putchar(l);
-		_putchar('\n');
-	}
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
+        }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 3;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 4;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 5;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 6;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 7;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
-	{
+        {
                 l = n * 8;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 	for (n = 0; n < 10; n++)
         {
                 l = n * 9;
-                _putchar(l);
-                _putchar('\n');
+                if (n != 9)
+                {
+                _putchar(l + '0');
+                _putchar(',');
+                _putchar(' ');
+                _putchar(' ');
+                }
+                else
+                {
+                        _putchar(l + '0');
+                }
         }
+        _putchar('\n');
 }
