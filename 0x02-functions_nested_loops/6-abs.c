@@ -3,11 +3,11 @@
 /**
  * _abs - check the code
  *
- * @int: integer parameter
+ * @r: integer parameter
  *
  * Return: Always 0.
  */
-int _abs(int)
+int _abs(int r)
 {
 	int r;
 	int n;
