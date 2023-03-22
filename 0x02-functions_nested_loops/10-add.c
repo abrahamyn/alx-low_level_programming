@@ -15,5 +15,5 @@ int add(int x, int y)
 
 	n = x + y;
 	_putchar(n + '0');
-	return (0);
+	return (n);
 }
