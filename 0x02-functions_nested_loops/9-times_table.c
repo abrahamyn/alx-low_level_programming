@@ -5,9 +5,9 @@
  *
  * Return: Always 0.
  */
-void times_table(void)
+void times_table(int n)
 {
-	int n,l = 0;
+	int l = 0;
 	
 	for (n = 0; n < 10; n++)
 	{
