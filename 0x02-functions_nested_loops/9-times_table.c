@@ -1,170 +1,48 @@
 #include "main.h"
-
 /**
- * times_table - check the code
+ * times_table -prints tables
  *
  * Return: Always 0.
  */
-int times_table(int n)
+void times_table(void)
 {
-	int l = 0;
-	
-	for (n = 0; n < 10; n++)
+	int a;
+	int b;
+	int c;
+
+	for (a = 0; a <= 9; a++)
 	{
-		if (n != 9)
+		for (b = 0; b <= 9; b++)
 		{
-		_putchar(48);
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
+			c = a * b;
+			if ((c / 10) == 0)
+			{
+				if (b == 0)
+				{
+					_putchar ('0');
+				}
+				if (b != 0)
+				{
+					_putchar (' ');
+					_putchar ((c % 10) + '0');
+				}
+				if (b < 9)
+				{
+					_putchar(',');
+					_putchar (' ');
+				}
+			}
+			else
+			{
+				_putchar ((c / 10) + '0');
+				_putchar ((c % 10) + '0');
+				if (b < 9)
+				{
+					_putchar(',');
+					_putchar (' ');
+				}
+			}
 		}
-		else
-		{
-			_putchar(48);
-		}
+		_putchar ('\n');
 	}
-	_putchar('\n');
-	for (n = 0; n < 10; n++)
-	{
-		if (n != 9)
-		{
-		_putchar(n + '0');
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		}
-		else
-		{
-			_putchar(n + '0');
-		}
-	}
-	_putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-		l = n * 2;
-                if (n != 9)
-                {
-                return (l);
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        return (l);
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 3;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 4;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 5;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 6;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 7;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 8;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
-	for (n = 0; n < 10; n++)
-        {
-                l = n * 9;
-                if (n != 9)
-                {
-                _putchar(l + '0');
-                _putchar(',');
-                _putchar(' ');
-                _putchar(' ');
-                }
-                else
-                {
-                        _putchar(l + '0');
-                }
-        }
-        _putchar('\n');
 }
