@@ -44,14 +44,14 @@ void times_table(void)
 		l = n * 2;
                 if (n != 9)
                 {
-                _putchar(l + '0');
+                return (l);
                 _putchar(',');
                 _putchar(' ');
                 _putchar(' ');
                 }
                 else
                 {
-                        _putchar(l + '0');
+                        return (l);
                 }
         }
         _putchar('\n');
