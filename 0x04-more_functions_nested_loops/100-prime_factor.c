@@ -16,6 +16,6 @@ int main(void)
 		else
 			n++;
 	}
-	printf("%d \n", max);
+	printf("%d\n", max);
 	return (0);
 }
