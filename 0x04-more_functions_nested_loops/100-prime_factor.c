@@ -12,7 +12,10 @@ int main(void)
 	for (n = 2; n <= 7;)
 	{
 		if (612852475143 % n == 0)
+		{
 			max = 612852475143 / n;
+			break;
+		}
 		else
 			n++;
 	}
