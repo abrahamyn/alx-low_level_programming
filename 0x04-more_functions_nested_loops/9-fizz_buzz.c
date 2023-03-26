@@ -3,12 +3,12 @@
 /**
  * main - check the code
  *
- * @i: integer parameter
- *
  * Return: Always 0.
  */
-int main(int i)
+int main(void)
 {
+	int i;
+
 	for (i = 0; i < 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
