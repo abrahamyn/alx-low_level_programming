@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
  * more_numbers - check the code
  *
@@ -7,11 +7,11 @@
  */
 void more_numbers(void)
 {
-	char n, i;
+	int n, i;
 
 	for (n = 0; n < 10; n++)
 	{
-		for (i = 0; i <= 14; i++)
+		for (i = 48; i <= 14; i++)
 		{
 			_putchar(i + '0');
 		}
