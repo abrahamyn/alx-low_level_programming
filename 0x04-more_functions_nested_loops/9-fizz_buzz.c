@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-/*
+/**
  * main - check the code
  *
- * Return - Always 0.
+ * @i: integer parameter
+ *
+ * Return: Always 0.
  */
-int main ()
+int main(int i)
 {
-	int i;
-
 	for (i = 0; i < 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
@@ -20,4 +20,5 @@ int main ()
 		else
 			printf("%d ", i);
 	}
+	return (0);
 }
