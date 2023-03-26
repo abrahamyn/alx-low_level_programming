@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	char n,i;
+	char n, i;
 
 	for (n = 0; n < 10; n++)
 	{
@@ -19,4 +19,3 @@ void more_numbers(void)
 	}
 	_putchar('\n');
 }
-
