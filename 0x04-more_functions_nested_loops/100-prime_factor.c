@@ -7,14 +7,15 @@
  */
 int main(void)
 {
-	int i, max;
+	int n, max = 0;
 
 	for (n = 2; n <= 7;)
 	{
 		if (612852475143 % n == 0)
-			max == 612852475143 / n;
+			max = 612852475143 / n;
 		else
 			n++;
 	}
 	printf("%d \n", max);
+	return (0);
 }
