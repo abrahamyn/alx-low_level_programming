@@ -14,7 +14,7 @@ int main(void)
 		if (612852475143 % n == 0)
 		{
 			max = 612852475143 / n;
-			break;
+			continue;
 		}
 		else
 			n++;
