@@ -5,11 +5,12 @@
  *
  * @s: string
  *
- * Return - 0.
+ * Return: 0.
  */
 int _strlen(char *s)
 {
-	char s[i];
+	int i;
 
-	return (i);
+	s[i];
+	return (i + 1);
 }
