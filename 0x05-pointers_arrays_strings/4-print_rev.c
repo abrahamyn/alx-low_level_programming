@@ -10,8 +10,11 @@
 void _puts(char *str)
 {
 	int i;
+	int length;
 
-	for (str[i] = '\0'; i >= 0; --i)
+	for (length = 0; s[length] != '\0'; length++;
+
+	for (i = length - l; i >= 0; i--)
 	{
 		_putchar(str[i]);
 	}
