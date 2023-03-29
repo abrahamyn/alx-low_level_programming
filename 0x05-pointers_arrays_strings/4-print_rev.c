@@ -3,11 +3,11 @@
 /**
  * _puts - prints a string followed by a new line..
  *
- *@str: the string to print.
+ *@s: the string to print.
  *
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
 	int i;
 	int length;
@@ -16,7 +16,7 @@ void _puts(char *str)
 
 	for (i = length - l; i >= 0; i--)
 	{
-		_putchar(str[i]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
