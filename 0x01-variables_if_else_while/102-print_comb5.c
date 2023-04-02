@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n, i, k;
+	int n, i, k, j;
 
 	for (n = 0; n < 10; n++)
 	{
@@ -14,15 +14,20 @@ int main(void)
 		{
 			for (k = 0; k < 10; k++)
 			{
-				if (i > n && k > i)
+				for (j = 0; j < 10; j++)
 				{
-					putchar('0' + n);
-					putchar('0' + i);
-					putchar('0' + k);
-					if (!(n == 7 && i == 8 && k == 9))
+					if ((n + i) < (j + k))
 					{
-						putchar(',');
+						putchar('0' + n);
+						putchar('0' + i);
 						putchar(' ');
+						putchar('0' + k);
+						putchar('0' + j);
+						if (!(n == 9 && i == 8 && k == 9 && j == 9))
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
