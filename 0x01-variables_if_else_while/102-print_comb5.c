@@ -25,11 +25,11 @@ int main(void)
 						putchar(' ');
 						putchar('0' + k);
 						putchar('0' + j);
-						if (!(n == 9 && i == 8 && k == 9 && j == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (!(n == 9 && i == 8 && k == 9 && j == 9))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
