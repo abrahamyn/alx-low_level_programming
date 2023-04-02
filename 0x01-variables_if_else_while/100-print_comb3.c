@@ -6,24 +6,24 @@
  */
 int main(void)
 {
-	int n;
+	int n, i;
 
-	for (n = 0; n < 100; n++)
+	for (n = 0; n < 10; n++)
 	{
-		if (n / 10 % 10 > n % 10)
-			break;
-
-		putchar('0' + (n / 10));
-		putchar('0' + (n % 10));
-
-		if (n != 99)
+		for (i = 0; i < 10; i++)
 		{
-			putchar(',');
-			putchar(' ');
+			if (i > n)
+			{
+				putchar('0' + n);
+				putchar('0' + (i % 10));
+				if (!(n == 8 && i == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-
 	}
 	putchar ('\n');
 	return (0);
 }
-
