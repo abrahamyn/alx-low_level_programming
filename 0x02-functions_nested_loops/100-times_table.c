@@ -64,7 +64,8 @@ void print_times_table(int n)
 						_putchar(' ');
 				}
 				print_number(x);
-				_putchar(44);
+				if (j != n)
+					_putchar(44);
 			}
 			_putchar('\n');
 		}
