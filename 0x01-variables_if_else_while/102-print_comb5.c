@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int n, i, k, j;
+	int n, i, k, j, a, b;
 
 	for (n = 0; n < 10; n++)
 	{
@@ -16,7 +16,9 @@ int main(void)
 			{
 				for (j = 0; j < 10; j++)
 				{
-					if ((n + i) < (j + k))
+					a = (n * 10) + i;
+					b = (k * 10) + j;
+					if (a <= b - 1)
 					{
 						putchar('0' + n);
 						putchar('0' + i);
