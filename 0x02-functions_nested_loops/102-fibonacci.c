@@ -15,7 +15,7 @@ int main(void)
 		x = i + j;
 		i = j;
 		j = x;
-		printf(", %li", x);
+		printf(", %li\n", x);
 	}
 	return (0);
 }
