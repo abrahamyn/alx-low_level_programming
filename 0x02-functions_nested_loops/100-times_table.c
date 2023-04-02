@@ -1,49 +1,32 @@
 #include "main.h"
 /**
- * times_table -prints tables
+ * print_times_table -prints tables
  *
- * Return: Always 0.
+ * @n: integer parameter
  */
-void times_table(void)
+void print_times_table(int n)
 {
-	int a;
-	int b;
-	int c;
-	int n;
+	int i, j;
 
-	for (a = 0; a <= n; a++)
+	if (n < 0 || n > 15)
 	{
-		for (b = 0; b <= n; b++)
+	}
+	else
+	{
+		for (i = 0; i < n + 1; i++)
 		{
-			c = a * b;
-			if ((c / 10) == 0)
+			for (j = 0; j < n + 1; j++)
 			{
-				if (b == 0)
+				if (i == 0)
+					_putchar(i + '0');
+				else
 				{
-					_putchar ('0');
+					_putchar((j * n) + '0');
 				}
-				if (b != 0)
-				{
-					_putchar (' ');
-					_putchar ((c % 10) + '0');
-				}
-				if (b < n)
-				{
-					_putchar(',');
-					_putchar (' ');
-				}
+				if (!(j == n))
+					_putchar(44);
 			}
-			else
-			{
-				_putchar ((c / 10) + '0');
-				_putchar ((c % 10) + '0');
-				if (b < n)
-				{
-					_putchar(',');
-					_putchar (' ');
-				}
-			}
+			_putchar('\n');
 		}
-		_putchar ('\n');
 	}
 }
