@@ -11,8 +11,7 @@ int string_length(char *a, int n)
 {
 if (a[n] != '\0')
 {
-n++;
-return (string_length);
+return (string_length(*a, n + 1);
 }
 return (n);
 }
@@ -30,9 +29,7 @@ char rev_string(char *b, int r, int x)
 if(r != x)
 {
 b[r] = b[x];
-r--;
-b++;
-return (rev_string);
+return (rev_string(*b, r - 1, x + 1);
 }
 return (*b);
 }
@@ -64,6 +61,6 @@ return (1);
 }
 else
 {
-return (compare_string(char *s, (return (rev_string(char *s, return (string_length (*s, 0)), 0)))));  
+return (compare_string(*s, (return (rev_string(*s, return (string_length (*s, 0)), 0)))));  
 }
 }
