@@ -47,7 +47,7 @@ return (1);
 }
 else
 {
-k = return (string_length (*s, 0));
+int k = string_length (*s, 0));
 return (compare_string(s, k));  
 }
 }
