@@ -41,13 +41,6 @@ return (compare_string(f + 1, k - 2));
 */
 int is_palindrome(char *s)
 {
-if (*s == 0)
-{
-return (1);
-}
-else
-{
 int k = string_length(s, 0);
-return (compare_string(s, k));
-}
+return (compare_string(s, k - 1));
 }
