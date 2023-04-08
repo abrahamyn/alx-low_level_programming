@@ -30,7 +30,7 @@ return (0);
 else if (*f == 0)
 return (1);
 else
-return (compare_string(f + 1, k - 1));
+return (compare_string(f + 1, k - 2));
 }
 
 /**
@@ -41,13 +41,13 @@ return (compare_string(f + 1, k - 1));
 */
 int is_palindrome(char *s)
 {
-if(*s == 0)
+if (*s == 0)
 {
-return (1);  
+return (1);
 }
 else
 {
-int k = string_length (s, 0);
-return (compare_string(s, k));  
+int k = string_length(s, 0);
+return (compare_string(s, k));
 }
 }
