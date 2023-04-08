@@ -11,7 +11,7 @@ int string_length(char *a, int n)
 {
 if (a[n] != '\0')
 {
-return (string_length(a, n + 1);
+return (string_length(a, n + 1));
 }
 return (n);
 }
@@ -29,7 +29,7 @@ return (0);
 else if (*f == 0)
 return (1);
 else
-return (compare_string(f + 1, k - 1);
+return (compare_string(f + 1, k - 1));
 }
 
 /**
@@ -46,6 +46,6 @@ return (1);
 }
 else
 {
-return (compare_string(*s,(return (string_length (*s, 0)))));  
+return (compare_string(s, return (string_length (*s, 0))));  
 }
 }
