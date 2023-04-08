@@ -20,6 +20,7 @@ return (n);
 * compare_string - compares string vs string reverse
 *
 * @f: string pointer
+* @k: integer parameter
 * Return: Always 0.
 */
 int compare_string(char *f, int k)
@@ -46,6 +47,7 @@ return (1);
 }
 else
 {
-return (compare_string(s, return (string_length (*s, 0))));  
+k = return (string_length (*s, 0));
+return (compare_string(s, k));  
 }
 }
