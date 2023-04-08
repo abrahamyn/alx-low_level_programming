@@ -11,27 +11,9 @@ int string_length(char *a, int n)
 {
 if (a[n] != '\0')
 {
-return (string_length(*a, n + 1);
+return (string_length(a, n + 1);
 }
 return (n);
-}
-
-/**
-* rev_string - checks if a string is palindrome
-*
-* @b: string pointer
-* @r: integer parameter
-* @x: integer parameter
-* Return: Always 0.
-*/
-char rev_string(char *b, int r, int x)
-{
-if(r != x)
-{
-b[r] = b[x];
-return (rev_string(*b, r - 1, x + 1);
-}
-return (*b);
 }
 
 /**
@@ -40,13 +22,16 @@ return (*b);
 * @f: string pointer
 * Return: Always 0.
 */
-int compare_string(char *f, char *p)
+int compare_string(char *f, int k)
 {
-if (*f == *p)
+if (*f != *(f + k))
+return (0);
+else if (*f == 0)
 return (1);
 else
-return 0;
+return (compare_string(f + 1, k - 1);
 }
+
 /**
 * is_palindrome - checks if a string is palindrome
 *
@@ -61,6 +46,6 @@ return (1);
 }
 else
 {
-return (compare_string(*s, (return (rev_string(*s, return (string_length (*s, 0)), 0)))));  
+return (compare_string(*s,(return (string_length (*s, 0)))));  
 }
 }
