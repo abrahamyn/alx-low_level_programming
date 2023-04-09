@@ -3,8 +3,8 @@
 /**
  * _memcpy - fills the first n bytes of the memory area pointed to by s
  *
- * @s: pointer
- * @b: character parameter
+ * @dest: pointer
+ * @src: character parameter
  * @n: integer parameter
  * Return: Always 0.
  */
