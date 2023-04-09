@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
-		c = is_number(*(argv + i);
+		c = is_number(*(argv + i));
 		if ( c == 0)
 		{
 			printf("Error\n");
