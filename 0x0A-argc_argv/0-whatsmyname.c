@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[])
 {
-long __attribute__((unused)) argc;
+__attribute__((unused)) argc;
 printf("%s", argv[0]);
 return (0);
 }
