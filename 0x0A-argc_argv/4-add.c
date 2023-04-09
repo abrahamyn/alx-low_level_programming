@@ -11,16 +11,15 @@
 int is_number(char *n)
 {
 	int i = 0, c;
-	
+
 	if (*n == '-')
 		i++;
-	for(; *(n + i) != 0; i++)
+	for (; *(n + i) != 0; i++)
 	{
 		c = isdigit(*(n + i));
 		if (c == 0)
 		{
 			return (0);
-			break;
 		}
 	}
 	return (1);
@@ -36,12 +35,13 @@ int main(int argc, char **argv)
 {
 	int i, c;
 	int sum = 0;
+
 	if (argc < 1)
 		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
 		c = is_number(*(argv + i));
-		if ( c == 0)
+		if (c == 0)
 		{
 			printf("Error\n");
 			return (1);
