@@ -8,7 +8,7 @@
 * @n: string
 * Return: 0 if false and 1 if true.
 */
-int is_number(*n)
+int is_number(char *n)
 {
 	int i = 0, c;
 	
@@ -34,13 +34,14 @@ int is_number(*n)
 */
 int main(int argc, char **argv)
 {
-	int i;
+	int i, c;
 	int sum = 0;
 	if (argc < 1)
 		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
-		if (is_number(argv[i]) == 0)
+		c = is_number(argv[i]);
+		if ( c == 0)
 		{
 			printf("Error\n");
 			return (1);
