@@ -10,8 +10,9 @@
 */
 int main(int argc, char **argv)
 {
-while (**argv++)
+argc = 0;
+while (*argv++)
 argc++;
-printf("%d\n", argc);
+printf("%d\n", argc - 1);
 return (0);
 }
