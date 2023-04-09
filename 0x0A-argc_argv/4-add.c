@@ -12,7 +12,7 @@ int is_number(char *n)
 {
 	int i = 0, c;
 	
-	if (*n = '-')
+	if (*n == '-')
 		i++;
 	for(; *(n + i) != 0; i++)
 	{
@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 		printf("0\n");
 	for (i = 1; i < argc; i++)
 	{
-		c = is_number(argv[i]);
+		c = is_number(*(argv + i);
 		if ( c == 0)
 		{
 			printf("Error\n");
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 		}
 		else
 		{
-			sum += argv[i];
+			sum += *(argv + i);
 		}
 	}
 	printf("%d\n", sum);
