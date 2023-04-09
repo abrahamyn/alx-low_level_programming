@@ -8,9 +8,10 @@
 * @argv: array of arguments
 * Return: Always 0.
 */
-int main(int argc, float **argv)
+int main(int argc, char **argv)
 {
-int i = argv[1] * argv[2];
+int i;
+int mul = 0;
 
 if (argc != 3)
 {
@@ -19,6 +20,8 @@ return (1);
 }
 else
 {
+for (i = 1; i < argc; i++)
+mul *= argv[i];
 printf("%d\n", i);
 return (0);
 }
