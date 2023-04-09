@@ -8,9 +8,8 @@
 * @argv: array of arguments
 * Return: Always 0.
 */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-int __attribute__((unused)) argc;
 printf("%s", argv[0]);
 return (0);
 }
