@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memcpy - fills the first n bytes of the memory area pointed to by s with the constant byte b
+ * _memcpy - fills the first n bytes of the memory area pointed to by s
  *
  * @s: pointer
  * @b: character parameter
@@ -10,11 +10,11 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-        unsigned int i;
+	unsigned int i;
 
-        for (i = 0; i < n; i++)
-        {
-                dest[i] = src[i];
-        }
-        return (dest);
+	for (i = 0; i < n; i++)
+	{
+		dest[i] = src[i];
+	}
+	return (dest);
 }
